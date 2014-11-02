@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  sing365_beta_1.0
+
+  Created by Brian on 14-8-13.
+  Copyright (c) 2014年 Stone_Zl. All rights reserved.
+*/
+{
+    firstMenu = "歌曲";
+    secondMenu = "专辑";
+    thirdMenu = "本地";
+    forthMenu = "设置";
+    mainMenu = "歌曲";
+}
