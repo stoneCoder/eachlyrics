@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DDMenuController.h"
-#import "LeftMenuController.h"
+//#import "LeftMenuController.h"
 #import "MainViewController.h"
 
 @implementation AppDelegate

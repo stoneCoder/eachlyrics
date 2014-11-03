@@ -44,7 +44,10 @@
         MPMediaItemArtwork *artwork = [self.item valueForProperty:MPMediaItemPropertyArtwork];
         //专辑封面
         UIImage *img = [artwork imageWithSize:CGSizeMake(self.tableView.frame.size.width, self.tableView.frame.size.height)];
-        self.tableView.backgroundView = [[UIImageView alloc] initWithImage:img];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:img];
+        imageView.alpha = 0.8f;
+        self.tableView.backgroundView = imageView;
+        
        
         //设置底部背景色
         topOffset = STATUS_BAR_HEIGHT+NAVIGATION_BAR_LENGTH+self.tableView.frame.size.height;
@@ -414,7 +417,6 @@
     }
     //UIColor* color=[[UIColor alloc]initWithRed:0.0 green:0.0 blue:0.0 alpha:0];//通过RGB来定义颜色
     cell.selectedBackgroundView= [[UIView alloc]initWithFrame:cell.frame];
-    //cell.selectedBackgroundView.backgroundColor= color;
     //设置选中字体的颜色为紫色
     cell.textLabel.highlightedTextColor = [UIColor purpleColor];
     return cell;
