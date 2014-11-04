@@ -41,6 +41,9 @@
         }
         
         
+        
+        
+        
         MPMediaItemArtwork *artwork = [self.item valueForProperty:MPMediaItemPropertyArtwork];
         //专辑封面
         UIImage *img = [artwork imageWithSize:CGSizeMake(self.tableView.frame.size.width, self.tableView.frame.size.height)];
